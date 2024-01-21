@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Page</title>
+</head>
+<body>
+<div class="container">
+    <button><a th:href="@{/Staff}">Back to Home</a></button>
+    <hr>
+    <form th:action="@{/Staff/Register}" method="post">
+        <h1>Create Page</h1>
+        <label>USERNAME:</label>
+        <br>
+        <input type="text" name="UserName" placeholder="Enter your username">
+        <br><br>
+        <label>AGE:</label>
+        <br>
+        <input type="number" name="UserAge" placeholder="Enter your age">
+        <br><br>
+        <input type="submit" value="SAVE">
+    </form>
+</div>
+
+</body>
+</html>

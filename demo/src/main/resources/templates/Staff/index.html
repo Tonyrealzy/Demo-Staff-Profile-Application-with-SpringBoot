@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+<hr>
+<button><a th:href="@{/Staff/Create}">Create</a></button>
+<button><a th:href="@{/Staff/List}">List All</a></button>
+<br>
+<h1>Home Page</h1>
+<p th:text="${info}">Here's an alternate text...</p>
+<br>
+</body>
+</html>
